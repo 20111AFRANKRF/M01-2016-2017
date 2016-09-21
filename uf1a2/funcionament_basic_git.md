@@ -1,10 +1,10 @@
 # Funcionament basic del git
 
-__CLONAR REPOSITORI__  
-1. obrir terminal
-2. log in
-3. cd documentos: ficar-te dins del directori documents
-4. git clone URL: clonar la URL git
+__CLONAR REPOSITORI__    
+1. obrir terminal  
+2. log in  
+3. cd documentos: ficar-te dins del directori documents  
+4. git clone URL: clonar la URL git  
 
 __MODIFICAR REPOSITORI I DESAR-HO__  
 _DESPRES DE MODIFICAR:_  
