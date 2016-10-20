@@ -9,5 +9,5 @@ ___FRANK RODRIGUEZ___
 5. Ports USB
 6. Connectors microfon i xarxa  
 
-![ordinador](/home/users/inf/hism1/ism26066750/ism26066750/M01-2016-2017/Connectors Ordinador)
+![ordinador](M01-2016-2017/Connectors Ordinador)
 
