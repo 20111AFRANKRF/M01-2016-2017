@@ -7,4 +7,7 @@ ___FRANK RODRIGUEZ___
 3. Connector DVI
 4. Connector VGA
 5. Ports USB
-6. Connectors microfon i xarxa
+6. Connectors microfon i xarxa  
+
+![ordinador](/home/users/inf/hism1/ism26066750/ism26066750/M01-2016-2017/Connectors Ordinador)
+
