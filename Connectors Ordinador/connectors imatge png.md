@@ -9,5 +9,5 @@ ___FRANK RODRIGUEZ___
 5. Ports USB
 6. Connectors microfon i xarxa  
 
-![ordinador](M01-2016-2017/Connectors Ordinador)
+![Sin Titulo](/M01-2016-2017/Connectors Ordinador)
 
