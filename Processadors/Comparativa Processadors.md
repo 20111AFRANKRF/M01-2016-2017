@@ -1,5 +1,5 @@
 #PROCESSADORS  
-***Frank Rodriguez  
+**Frank Rodriguez  
 
 ##INTEL i7-6700K VS AMD FX-6350
 
