@@ -2,7 +2,7 @@
 
 1. Resum de sistemes RAID fent servir una taula com la vista a classe.
 
-| RAID | MIN. DISCS | MAX. DISCS ERROR | CAPACICTAT | READ | WRITE |
+| RAID | MIN. DISCS | MAX. DISCS ERROR | CAPACITAT | READ | WRITE |
 | :--- | :--------: | :--------------: | :--------: | :--: | :---: |
 |   0  |     2      |         0        |     100%   |  E   |   E   |
 |   1  |     2      |         1        |      50%   |  VG  |   G   |
