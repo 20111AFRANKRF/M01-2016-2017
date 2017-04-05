@@ -1,4 +1,4 @@
-#SISTEMES RAID
+# SISTEMES RAID
 
 1. Resum de sistemes RAID fent servir una taula com la vista a classe.
 
