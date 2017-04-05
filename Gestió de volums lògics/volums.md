@@ -16,9 +16,9 @@
 ## COMANDES:   
 
 **pvcreate** --> S'utilitza pre crear PV  
-**vgcreate <nombre-vg> <ruta-pv1> <ruta-pv2> <etc.>** --> S'utilitza per crear VG  
-**lvcreate -l +100%FREE> -n <nombre-lv>** --> S'utilitza per crear un LV amb tot l'espai lliure  
-**lvcreate -L <tamany> -n <nombre-lv> <ruta-vg-donde-lo-quieres-crear>** --> S'utilitza per crear un LV amb el tamany que tu vulguis   
+**vgcreate nombre-vg ruta-pv1 ruta-pv2 etc.** --> S'utilitza per crear VG  
+**lvcreate -l +100%FREE> -n nombre-lv** --> S'utilitza per crear un LV amb tot l'espai lliure  
+**lvcreate -L tamany -n nombre-lv ruta-vg-donde-lo-quieres-crear** --> S'utilitza per crear un LV amb el tamany que tu vulguis   
 **pvs** --> llista els punts de muntatge   
 **vgextend** --> Augmenta la mida del VG  
 **lvextend** --> Augmenta la mida del LV  
@@ -29,7 +29,7 @@
 
 * Pràctica 1: Creació d'un volum lògic a partir d'un dels tres discs durs (vda per exemple). Aquest volum lògic ha de ser del total de capacitat del disc. El volum de grup s'ha de dir practica1 i el volum lògic dades.  
 
-![Con Titulo](capturas-gestio-de-volums-logics/PRACTICA1)  
+!(M01-2016-2017/capturas-gestio-de-volums-logics/PRACTICA1)  
 
 Primer de tot afegim 3 discs ***VirtIO***  
 Despres identifiquem un dels discs con PV  
