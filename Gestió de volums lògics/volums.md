@@ -29,10 +29,10 @@
 
 * Pràctica 1: Creació d'un volum lògic a partir d'un dels tres discs durs (vda per exemple). Aquest volum lògic ha de ser del total de capacitat del disc. El volum de grup s'ha de dir practica1 i el volum lògic dades.  
 
-!(M01-2016-2017/capturas-gestio-de-volums-logics/PRACTICA1)  
+![](PRACTICA1.png)  
 
 Primer de tot afegim 3 discs ***VirtIO***  
-Despres identifiquem un dels discs con PV  
+Despres identifiquem un dels discs con **PV**  
 Seguidament creem el **VG** practica1     
 y per finalitzar creem el **LV**     
 al final de tot veiem que tot a quedat bé mitjaçant *pvs* y *lvs*  
