@@ -44,7 +44,7 @@ veiem que tot a quedat bé mitjaçant *pvs* y *lvs*
 Per finalitzar creem un sistema de fitxers xfs i el punt de muntatge sera /mnt a més afegirem un fitxer de 180MB amb el *dd*
 
 * Pràctica 3: Creació d'un RAID 1 als dos discos sobrants (vdb i vdc per exemple).
-
+![](practica3.png)  
 * Pràctica 4: Ampliació del volum lògic de dades al raid.
 
 * Pràctica 5: Ampliació del sistema de fitxers xfs al tamany actual del volum lògic dades (s'ha de poder fer sense desmuntar-lo de /mnt ja que és xfs). Una vegada creat crearem un nou fitxer de 180M.
