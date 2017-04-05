@@ -1,53 +1,41 @@
-# GESTIÓ DE VOLUMS LÒGICS
+# GESTIÓ DE VOLUMS LÒGICS  
 
-## QUè SÓN?
+## QUè SÓN?  
 
- * Els volums lògics son unitats de disc virtualitzades quie permeten fer més funcions que les clàssiques particions
+ * Els volums lògics son unitats de disc virtualitzades quie permeten fer més funcions que les clàssiques particions  
 
-## DESCRIPCIÓ:
+## DESCRIPCIÓ:  
 
-| **PV** | Physical Volume ~ Identificació de discs |     
-| **VG** | Volume Group ~ Discs Virtuals |
-| **LV** | Logical Volume ~ Particións |
+| **PV** | Physical Volume ~ Identificació de discs |         
+| **VG** | Volume Group ~ Discs Virtuals |  
+| **LV** | Logical Volume ~ Particións |  
 
-													------------                   
-  PV              PV            PV                              |                          
-DISC 1 (1T) | DISC 2 (1T) | DISC 3 (1T) --> **DISCS REALS**     |                   
-                   |                                            |                    ______________________________________
-                   |                                            |                   |Les avantatges d'usar LVM             |
-				 VG (3T)                                        |                   |es que podem ampliar o reduir         |
-				   |                                            |----ESTRUCTURA --- |en calent, es a dir, sense la         |
-				   |                                            |                   |necesitat de parar res del maquinari  |
-				LV - LV                                         |                   |______________________________________|
-				   |                                            |                   
-		  Sistema de Fitxers                                    |                   
-		 (.xfs, .ext3, .ext4)                                   |
-		                                            ------------ 
+													
 		                                            
 		                                            
-## COMANDES: 
+## COMANDES:   
 
-**pvcreate** --> S'utilitza pre crear PV
-**vgcreate <nombre-vg> <ruta-pv1> <ruta-pv2> <etc.>** --> S'utilitza per crear VG
-**lvcreate -l +100%FREE> -n <nombre-lv>** --> S'utilitza per crear un LV amb tot l'espai lliure
-**lvcreate -L <tamany> -n <nombre-lv> <ruta-vg-donde-lo-quieres-crear>** --> S'utilitza per crear un LV amb el tamany que tu vulguis 
-**pvs** --> llista els punts de muntatge 
-**vgextend** --> Augmenta la mida del VG
-**lvextend** --> Augmenta la mida del LV
+**pvcreate** --> S'utilitza pre crear PV  
+**vgcreate nombre-vg ruta-pv1 ruta-pv2 etc.** --> S'utilitza per crear VG  
+**lvcreate -l +100%FREE> -n nombre-lv** --> S'utilitza per crear un LV amb tot l'espai lliure  
+**lvcreate -L tamany -n nombre-lv ruta-vg-donde-lo-quieres-crear** --> S'utilitza per crear un LV amb el tamany que tu vulguis   
+**pvs** --> llista els punts de muntatge   
+**vgextend** --> Augmenta la mida del VG  
+**lvextend** --> Augmenta la mida del LV  
 
-## ENTORN DE PRACTIQUES:
+## ENTORN DE PRACTIQUES:  
 
-> Explicar com farem la pràctica detalladament (màquina virtual i afegir tres discs de 200M)
+> Explicar com farem la pràctica detalladament (màquina virtual i afegir tres discs de 200M)  
 
-* Pràctica 1: Creació d'un volum lògic a partir d'un dels tres discs durs (vda per exemple). Aquest volum lògic ha de ser del total de capacitat del disc. El volum de grup s'ha de dir practica1 i el volum lògic dades.
+* Pràctica 1: Creació d'un volum lògic a partir d'un dels tres discs durs (vda per exemple). Aquest volum lògic ha de ser del total de capacitat del disc. El volum de grup s'ha de dir practica1 i el volum lògic dades.  
 
-!(capturas-gestio-de-volums-logics/PRACTICA1)
+!(M01-2016-2017/capturas-gestio-de-volums-logics/PRACTICA1)  
 
-Primer de tot afegim 3 discs ***VirtIO***
-Despres identifiquem un dels discs con PV
-Seguidament creem el **VG** practica1 
-y per finalitzar creem el **LV** 
-al final de tot veiem que tot a quedat bé mitjaçant *pvs* y *lvs*
+Primer de tot afegim 3 discs ***VirtIO***  
+Despres identifiquem un dels discs con PV  
+Seguidament creem el **VG** practica1     
+y per finalitzar creem el **LV**     
+al final de tot veiem que tot a quedat bé mitjaçant *pvs* y *lvs*  
 
 * Pràctica 2: Creació d'un sistema de fitxers xfs al volum lògic creat i muntatge a /mnt. També s'ha de crear un fitxer amb dd de 180MB.
 
