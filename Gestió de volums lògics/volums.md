@@ -27,14 +27,14 @@
 
 > Explicar com farem la pràctica detalladament (màquina virtual i afegir tres discs de 200M)    
 
-''' > Pràctica 1: Creació d'un volum lògic a partir d'un dels tres discs durs (vda per exemple). Aquest volum lògic ha de ser del total de capacitat del disc. El volum de grup s'ha de dir practica1 i el volum lògic dades.      
+	> Pràctica 1: Creació d'un volum lògic a partir d'un dels tres discs durs (vda per exemple). Aquest volum lògic ha de ser del total de capacitat del disc. El volum de grup s'ha de dir practica1 i el volum lògic dades.      
 
-> Pràctica 2: Creació d'un sistema de fitxers xfs al volum lògic creat i muntatge a /mnt. També s'ha de crear un fitxer amb dd de 180MB.      
+	> Pràctica 2: Creació d'un sistema de fitxers xfs al volum lògic creat i muntatge a /mnt. També s'ha de crear un fitxer amb dd de 180MB.      
 
-![](practica1.png)    
-![](practica2.png)    
+	![](practica1.png)    
+	![](practica2.png)    
 
-* Primer de tot afegim 3 discs ***VirtIO***, Despres identifiquem un dels discs con **PV**. Seguidament creem el **VG** practica1 y per finalitzar creem el **LV**, veiem que tot a quedat bé mitjaçant *pvs* y *lvs*. Per finalitzar creem un sistema de fitxers xfs i el punt de muntatge sera /mnt a més afegirem un fitxer de 180MB amb el *dd* '''
+	* Primer de tot afegim 3 discs ***VirtIO***, Despres identifiquem un dels discs con **PV**. Seguidament creem el **VG** practica1 y per finalitzar creem el **LV**, veiem que tot a quedat bé mitjaçant *pvs* y *lvs*. Per finalitzar creem un sistema de fitxers xfs i el punt de muntatge sera /mnt a més afegirem un fitxer de 180MB amb el *dd* 
 
 > Pràctica 3: Creació d'un RAID 1 als dos discos sobrants (vdb i vdc per exemple).  
 ![](practica3.png)     
