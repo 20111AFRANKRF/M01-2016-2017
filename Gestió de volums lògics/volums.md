@@ -39,7 +39,7 @@
 **Pràctica 3: Creació d'un RAID 1 als dos discos sobrants (vdb i vdc per exemple).**    
 
 ![](practica3.png)      
- Primer de tot tenim que identificar quins disc faran el RAID, una vegada fet això podem crear el RAID amb la comanda *"mdadm --create (nombre-RAID) --level=(tipus-RAID) --raid-devices=(nº de raids) (disc1) (etc.)"*    
+ * Primer de tot tenim que identificar quins disc faran el RAID, una vegada fet això podem crear el RAID amb la comanda *"mdadm --create (nombre-RAID) --level=(tipus-RAID) --raid-devices=(nº de raids) (disc1) (etc.)"*    
 
 **Pràctica 4: Ampliació del volum lògic de dades al raid.**      
 
@@ -51,3 +51,5 @@
 **Pràctica 5: Ampliació del sistema de fitxers xfs al tamany actual del volum lògic dades (s'ha de poder fer sense desmuntar-lo de /mnt ja que és xfs). Una vegada creat crearem un nou fitxer de 180M.**      
 
 ![](practica5.png)    
+
+* Per finalitzar augmentem el tamany del sistema de fitxers amb la seguent comanda *""xfs_growfs /dev/practica1/dades"*  
