@@ -34,18 +34,17 @@
 ![](practica1.png)    
 ![](practica2.png)    
 
-* Primer de tot afegim 3 discs ***VirtIO***, Despres identifiquem un dels discs con **PV**. Seguidament creem el **VG** practica1 y per finalitzar creem el **LV**, veiem que tot a quedat bé mitjaçant *pvs* y *lvs*. Per finalitzar creem un sistema de fitxers xfs i el punt de muntatge sera /mnt a més afegirem un fitxer de 180MB amb el *dd* 
+* Primer de tot afegim 3 discs ***VirtIO***, Despres identifiquem un dels discs con **PV**. Seguidament creem el **VG** practica1 y per finalitzar creem el **LV**, veiem que tot a quedat bé mitjaçant *pvs* y *lvs*. Per finalitzar creem un sistema 	de fitxers xfs i el punt de muntatge sera /mnt a més afegirem un fitxer de 180MB amb el *dd* 
 
 > Pràctica 3: Creació d'un RAID 1 als dos discos sobrants (vdb i vdc per exemple).  
 ![](practica3.png)      
-* Primer de tot tenim que identificar quins disc faran el RAID, una vegada fet això podem crear el RAID amb la comanda 
-	mdadm --create (nombre-RAID) --level=(tipus-RAID) --raid-devices=(nº de raids) (disc1) (etc.)  
+ Primer de tot tenim que identificar quins disc faran el RAID, una vegada fet això podem crear el RAID amb la comanda *"mdadm --create (nombre-RAID) --level=(tipus-RAID) --raid-devices=(nº de raids) (disc1) (etc.)"*    
 
-> Pràctica 4: Ampliació del volum lògic de dades al raid.  
+**> Pràctica 4: Ampliació del volum lògic de dades al raid.  
 
-![](practica4.png)  
+![](practica4.png)    
 
-Primer de tot tenim que afe
+* Primer de tot tenim que convertir el RAID *md0* en un **PV** amb la comanda *"pvcreate /dev/md0"*, a continuació utilitzem el tamany del RAID per expandir el **VG** amb la comanda *"vgextend practica1 /dev/md0"*, y finalitzem afegim tot l'espai lliure al **LV** amb la comanda *"lvextend -l +100%free /dev/practica1/dades"*   
 
 
 > Pràctica 5: Ampliació del sistema de fitxers xfs al tamany actual del volum lògic dades (s'ha de poder fer sense desmuntar-lo de /mnt ja que és xfs). Una vegada creat crearem un nou fitxer de 180M.
