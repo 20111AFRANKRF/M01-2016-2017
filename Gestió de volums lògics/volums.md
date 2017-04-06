@@ -25,13 +25,11 @@
 
 ## ENTORN DE PRACTIQUES:  
 
-> Explicar com farem la pràctica detalladament (màquina virtual i afegir tres discs de 200M)  
+> Explicar com farem la pràctica detalladament (màquina virtual i afegir tres discs de 200M)    
 
-* Pràctica 1: Creació d'un volum lògic a partir d'un dels tres discs durs (vda per exemple). Aquest volum lògic ha de ser del total de capacitat del disc. El volum de grup s'ha de dir practica1 i el volum lògic dades.    
+> Pràctica 1: Creació d'un volum lògic a partir d'un dels tres discs durs (vda per exemple). Aquest volum lògic ha de ser del total de capacitat del disc. El volum de grup s'ha de dir practica1 i el volum lògic dades.      
 
-* Pràctica 2: Creació d'un sistema de fitxers xfs al volum lògic creat i muntatge a /mnt. També s'ha de crear un fitxer amb dd de 180MB.  
-
-> PRACTICA 1 Y 2:  
+> Pràctica 2: Creació d'un sistema de fitxers xfs al volum lògic creat i muntatge a /mnt. També s'ha de crear un fitxer amb dd de 180MB.      
 
 ![](practica1.png)    
 ![](practica2.png)    
@@ -44,7 +42,9 @@
 
 > Pràctica 4: Ampliació del volum lògic de dades al raid.  
 
-![](practica4.png)    
+![](practica4.png)  
+
+Primer de tot tenim que afe
 
 
 > Pràctica 5: Ampliació del sistema de fitxers xfs al tamany actual del volum lògic dades (s'ha de poder fer sense desmuntar-lo de /mnt ja que és xfs). Una vegada creat crearem un nou fitxer de 180M.
