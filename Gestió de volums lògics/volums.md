@@ -1,6 +1,6 @@
 # GESTIÓ DE VOLUMS LÒGICS  
 
-## QUè SÓN?  
+## QUÈ SÓN?  
 
  * Els volums lògics son unitats de disc virtualitzades quie permeten fer més funcions que les clàssiques particions  
 
@@ -36,15 +36,13 @@
 ![](practica1.png)  
 ![](practica2.png)  
 
-Primer de tot afegim 3 discs ***VirtIO***  
-Despres identifiquem un dels discs con **PV**  
-Seguidament creem el **VG** practica1     
-y per finalitzar creem el **LV**     
-veiem que tot a quedat bé mitjaçant *pvs* y *lvs*  
-Per finalitzar creem un sistema de fitxers xfs i el punt de muntatge sera /mnt a més afegirem un fitxer de 180MB amb el *dd*
+* Primer de tot afegim 3 discs ***VirtIO***, Despres identifiquem un dels discs con **PV**. Seguidament creem el **VG** practica1 y per finalitzar creem el **LV**, veiem que tot a quedat bé mitjaçant *pvs* y *lvs*. Per finalitzar creem un sistema de fitxers xfs i el punt de muntatge sera /mnt a més afegirem un fitxer de 180MB amb el *dd*
 
-* Pràctica 3: Creació d'un RAID 1 als dos discos sobrants (vdb i vdc per exemple).
+> Pràctica 3: Creació d'un RAID 1 als dos discos sobrants (vdb i vdc per exemple).
 ![](practica3.png)  
-* Pràctica 4: Ampliació del volum lògic de dades al raid.
-
-* Pràctica 5: Ampliació del sistema de fitxers xfs al tamany actual del volum lògic dades (s'ha de poder fer sense desmuntar-lo de /mnt ja que és xfs). Una vegada creat crearem un nou fitxer de 180M.
+* Primer de tot tenim que identificar quins disc faran el RAID, una vegada fet això podem crear el RAID amb la comanda *"mdadm --create (nombre-RAID) --level=(tipus-RAID) --raid-devices=(nº de raids) (disc1) (etc.)
+* Quan ya tenim creat el RAID el tenim que muntar a algún lloc en aquest cas /mnt
+> Pràctica 4: Ampliació del volum lògic de dades al raid.
+![](practica4.png)  
+> Pràctica 5: Ampliació del sistema de fitxers xfs al tamany actual del volum lògic dades (s'ha de poder fer sense desmuntar-lo de /mnt ja que és xfs). Una vegada creat crearem un nou fitxer de 180M.
+![](practica5.png)  
